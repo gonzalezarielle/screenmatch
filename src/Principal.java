@@ -1,3 +1,4 @@
+import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
 import br.com.alura.screenmatch.modelo.Filme;
 
 public class Principal {
@@ -16,5 +17,8 @@ public class Principal {
 
         System.out.println("Média de avaliação do filme: " +favorito.pegaMedia());
         System.out.println("Total de avaliações: " + favorito.getTotalDeAvaliacoes());
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        filtro.filtra(favorito);
     }
 }
